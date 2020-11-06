@@ -4,7 +4,8 @@
   "description": "**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,13 +18,14 @@
     "url": "https://github.com/yvette-luong/web-sprint-challenge-adding-data-persistence/issues"
   },
   "homepage": "https://github.com/yvette-luong/web-sprint-challenge-adding-data-persistence#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.6"
-  },
   "dependencies": {
     "express": "^4.17.1",
     "helmet": "^4.2.0",
     "knex": "^0.21.12",
+    "morgan": "^1.10.0",
     "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
