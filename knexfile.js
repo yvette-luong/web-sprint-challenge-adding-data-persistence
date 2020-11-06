@@ -1,6 +1,6 @@
 // Update with your config settings.
 require("dotenv").config();
-const pgConnection = process.env.DATABASE_URL;
+const pgConnection = process.env.SECRET_THING;
 module.exports = {
   development: {
     client: 'sqlite3',
