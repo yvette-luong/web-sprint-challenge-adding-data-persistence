@@ -21,8 +21,7 @@ module.exports = {
       },
     },
   },//close for development
-
-  
+ 
   staging: {
     client: 'postgresql',
     connection: {
@@ -42,7 +41,7 @@ module.exports = {
   production: {
     connection: pgConnection,
     useNullAsDefault: true,
-    // client: "postgresql",
+    client: "postgresql",
     client: "pg",
     migrations: {
       directory: './data/migrations',
