@@ -37,7 +37,6 @@ module.exports = {
         max: 10,
       },
     }, //close for development
-
     staging: {
       client: "postgresql",
       connection: {
@@ -52,6 +51,7 @@ module.exports = {
       migrations: {
         tableName: "knex_migrations",
       },
-    },
-  },
-};
+    }
+  }
+
+}
