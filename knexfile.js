@@ -24,8 +24,8 @@ module.exports = {
     production: {
       connection: pgConnection,
       useNullAsDefault: true,
-      client: "postgresql",
-      // client: "pg",
+      // client: "postgresql",
+      client: "pg",
       migrations: {
         directory: "./data/migrations",
       },
