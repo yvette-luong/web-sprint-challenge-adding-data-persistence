@@ -17,7 +17,7 @@ exports.up = function (knex) {
         .unsigned()
         .references("id")
         .inTable("projects")
-        .onDelete("RESTRICT") // CASCADE, RESTRICT
+        .onDelete("CASCADE") // CASCADE, RESTRICT
         .onUpdate("CASCADE");
     })
 
@@ -34,7 +34,7 @@ exports.up = function (knex) {
         .notNullable()
         .references("id")
         .inTable("projects")
-        .onDelete("RESTRICT")
+        .onDelete("CASCADE")
         .onUpdate("CASCADE");
 
       tbl
@@ -43,7 +43,7 @@ exports.up = function (knex) {
         .notNullable()
         .references("id")
         .inTable("resources")
-        .onDelete("RESTRICT")
+        .onDelete("CASCADE")
         .onUpdate("CASCADE");
     });
 };
